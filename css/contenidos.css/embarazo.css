@@ -1,0 +1,76 @@
+
+.vh-100 {
+    height: 100vh!important;
+}
+.row {
+
+    display:flex;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color:#000;
+    background-color: #fff;
+    text-align: var(--bs-body-text-align);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.rounded-circle{
+    display: flex;
+    margin-left: 15%;
+    margin-right: 8%;
+}
+.btn-secondary {
+    --bs-btn-color: #000;
+    --bs-btn-bg: rgb(231, 192, 180);
+    --bs-btn-border-color: #000000;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #000;
+    --bs-btn-focus-shadow-rgb: 130,138,145;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: rgb(231, 192, 180);
+    --bs-btn-active-border-color: rgb(231, 192, 180);
+    --bs-btn-active-shadow: inset 0 3px 5px rgb(231, 192, 180);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: rgb(231, 192, 180);
+    --bs-btn-disabled-border-color: rgb(231, 192, 180);
+}
+
+.recuadro{
+    border: 1px;
+    padding:15px;
+    margin-top: 1cm;
+}
+div{
+    display:block;
+}
+
+.tipo{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    margin-top: 1cm;
+}
+
+body{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin:0px;
+    font-family: time;
+}

@@ -1,4 +1,15 @@
 <?php
+$host="localhost";
+$bd="placerex";
+$usuario="root";
+$contraseña="";
+
+try {
+    $conexion=new PDO("mysql:host=$host;dbname=$bd", $usuario,$contraseña);
+    //if($conexion){echo "Conectado... a sistema ";}
+} catch (Exception $ex) {
+    echo $ex->getMessage();
+}
 $txtID = (isset($_POST['txtID'])) ? $_POST['txtID'] : "";
 $txtNombre = (isset($_POST['txtNombre'])) ? $_POST['txtNombre'] : "";
 $txtusuario = (isset($_POST['txtusuario'])) ? $_POST['txtusuario'] : "";
@@ -7,7 +18,6 @@ $txtContrasena =(isset($_POST['txtContrasena'])) ? $_POST['txtContrasena'] : "";
 $claveCifrada = password_hash($txtContrasena, PASSWORD_DEFAULT);
 $accion = (isset($_POST['accion'])) ? $_POST['accion'] : "";
 
-include('administrador/bd.php');
 
 if($accion){
     $sentenciaSQL = $conexion->prepare("INSERT INTO registro (nombre, apellido, usuario, contrasena) VALUES (:nombre,:apellido,:usuario, :contrasena);");
@@ -27,7 +37,7 @@ if($accion){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="registro2.css">
+    <link rel="stylesheet" href="Placerex/css/registro2.css">
 </head>
     <header class="cabeza">
         <div style="text-align: center;">
